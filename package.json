@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/pgalchemy/standards/issues"
   },
-  "homepage": "https://github.com/pgalchemy/standards#readme"
+  "homepage": "https://github.com/pgalchemy/standards#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "eslint": "^4.7.1"
+  }
 }

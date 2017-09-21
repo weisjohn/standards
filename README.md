@@ -4,16 +4,32 @@ A collection of configuration and documentation for writing code at Alchemy.
 
 ## General Guidelines
 
-When working with any language all code and commit messages should be:
+When working with any language all code should be:
 
  - readable - code is read more than written, strive for readability
  - commented - explaining the logical / business context helps all maintainers
  - professional - do not use profanity or make disparaging remarks about 3rd parties
- - [atomic](https://seesparkbox.com/foundry/atomic_commits_with_git) - code should be added and located in a logically organized fashion
+ - [modular](http://substack.net/finding_modules) - code should be logically separated into discrete units of functionality
 
 ### Formatting
 
 Please utilize the [`.editorconfig`](./.editorconfig) file. If using Atom, please utilize the [atom-editorconfig](https://github.com/sindresorhus/atom-editorconfig) plugin. If using VSCode, please utilize [`editorconfig-vscode`](https://github.com/editorconfig/editorconfig-vscode). Please see [editorconfig.org](http://editorconfig.org/) for more integrations.
+
+
+## Source Control
+
+All work must be done in a Git repository, with work should be done in [separate branches](http://nvie.com/posts/a-successful-git-branching-model/).
+
+All commits made should be [atomic](https://seesparkbox.com/foundry/atomic_commits_with_git). Commit messages should be [intentional and useful](https://alistapart.com/article/the-art-of-the-commit) and should [reference the issue number](https://help.github.com/articles/closing-issues-using-keywords/) to which they correspond.
+
+For example, suppose issue number `42` asks us to implement a feature to allow users to login to a website. When adding the code that handles that request, (even if other features are missing) and the commit does not close that issue:
+
+```
+git commit -m "routes: allow POST against /login; re: #42"
+```
+
+This allows anyone reviewing the code (including your future self) to understand the purpose for that code, as they have a link to a larger description of the problem that code solves. This is also especially helpful in understanding the context for a line of code in the past through `git annotate`.
+
 
 
 ## Languages

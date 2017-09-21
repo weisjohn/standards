@@ -1,0 +1,27 @@
+{
+  "name": "standards",
+  "version": "0.0.1",
+  "description": "A collection of configuration and documentation for writing code at Alchemy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgalchemy/standards.git"
+  },
+  "keywords": [
+    "alchemy",
+    "standards",
+    "eslint",
+    "prettier",
+    "code",
+    "quality"
+  ],
+  "author": "John Weis <weis.john@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/pgalchemy/standards/issues"
+  },
+  "homepage": "https://github.com/pgalchemy/standards#readme"
+}

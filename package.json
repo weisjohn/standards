@@ -4,6 +4,7 @@
   "description": "A collection of configuration and documentation for writing code at Alchemy.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js --exec babel-node",
     "start": "babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
